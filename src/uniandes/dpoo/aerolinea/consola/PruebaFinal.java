@@ -10,7 +10,7 @@ public class PruebaFinal {
 
         Aerolinea aerolinea = new Aerolinea();
 
-        // 1️⃣ Cargar modelo principal
+        // Cargar modelo principal
         aerolinea.cargarAerolinea("datos/aerolinea.json", CentralPersistencia.JSON);
         
         
@@ -19,14 +19,14 @@ public class PruebaFinal {
         System.out.println("Cantidad rutas: " + aerolinea.getRutas().size());
         System.out.println("Cantidad vuelos: " + aerolinea.getVuelos().size());
 
-        // 2️⃣ Cargar tiquetes
+        // Cargar tiquetes
         aerolinea.cargarTiquetes("datos/tiquetes.json", CentralPersistencia.JSON);
 
-        // 3️⃣ Consultar saldo cliente
+        // Consultar saldo cliente
         System.out.println("Saldo Bob: " +
                 aerolinea.consultarSaldoPendienteCliente("Bob"));
 
-        // 4️⃣ Vender tiquetes
+        // Vender tiquetes
         int total = aerolinea.venderTiquetes(
                 "Bob",
                 "2024-11-05",
@@ -36,13 +36,13 @@ public class PruebaFinal {
 
         System.out.println("Venta realizada: " + total);
 
-        // 5️⃣ Guardar aerolínea
+        // Guardar aerolínea
         aerolinea.salvarAerolinea("datos/salida_aerolinea.json", CentralPersistencia.JSON);
 
-        // 6️⃣ Guardar tiquetes
+        // Guardar tiquetes
         aerolinea.salvarTiquetes("datos/salida_tiquetes.json", CentralPersistencia.JSON);
 
-        System.out.println("Prueba completada correctamente.");
+        System.out.println("Lo lograste capitán.");
     }
 }
 
