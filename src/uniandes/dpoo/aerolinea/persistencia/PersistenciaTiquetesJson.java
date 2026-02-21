@@ -177,7 +177,8 @@ public class PersistenciaTiquetesJson implements IPersistenciaTiquetes
 
             int tarifa = tiquete.getInt( TARIFA );
             boolean tiqueteUsado = tiquete.getBoolean( USADO );
-
+            
+           
             String identificadorCliente = tiquete.getString( CLIENTE );
             Cliente elCliente = aerolinea.getCliente( identificadorCliente );
             if( elCliente == null )

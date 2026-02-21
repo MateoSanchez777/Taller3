@@ -1,0 +1,40 @@
+{
+  "aeropuertos": [
+    {
+      "nombre": "El Dorado",
+      "codigo": "BOG",
+      "nombreCiudad": "Bogota",
+      "latitud": 4.7016,
+      "longitud": -74.1469
+    },
+    {
+      "nombre": "Jose Maria Cordova",
+      "codigo": "MDE",
+      "nombreCiudad": "Medellin",
+      "latitud": 6.1645,
+      "longitud": -75.4231
+    }
+  ],
+  "aviones": [
+    {
+      "nombre": "Boeing737",
+      "capacidad": 150
+    }
+  ],
+  "rutas": [
+    {
+      "codigoRuta": "4558",
+      "origen": "BOG",
+      "destino": "MDE",
+      "horaSalida": "0800",
+      "horaLlegada": "0900"
+    }
+  ],
+  "vuelos": [
+    {
+      "codigoRuta": "4558",
+      "fecha": "2024-11-05",
+      "avion": "Boeing737"
+    }
+  ]
+}
